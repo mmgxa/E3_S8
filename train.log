@@ -1,0 +1,33 @@
+[2023-07-12 06:34:26,029][dlearn.train][INFO] - Instantiating datamodule <dlearn.data.cifar10_datamodule.CIFAR10DataModule>
+[2023-07-12 06:34:26,047][dlearn.train][INFO] - Instantiating model <dlearn.models.vit_module.VitLitModule>
+[2023-07-12 06:34:26,101][dlearn.train][INFO] - Instantiating callbacks...
+[2023-07-12 06:34:26,101][dlearn.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.ModelCheckpoint>
+[2023-07-12 06:34:26,111][dlearn.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.EarlyStopping>
+[2023-07-12 06:34:26,112][dlearn.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichModelSummary>
+[2023-07-12 06:34:26,114][dlearn.utils.instantiators][INFO] - Instantiating callback <lightning.pytorch.callbacks.RichProgressBar>
+[2023-07-12 06:34:26,119][dlearn.train][INFO] - Instantiating loggers...
+[2023-07-12 06:34:26,119][dlearn.utils.instantiators][INFO] - Instantiating logger <aim.pytorch_lightning.AimLogger>
+[2023-07-12 06:34:26,414][dlearn.train][INFO] - Instantiating trainer <lightning.pytorch.trainer.Trainer>
+[2023-07-12 06:34:26,763][pytorch_lightning.utilities.rank_zero][INFO] - GPU available: True (cuda), used: True
+[2023-07-12 06:34:26,764][pytorch_lightning.utilities.rank_zero][INFO] - TPU available: False, using: 0 TPU cores
+[2023-07-12 06:34:26,766][pytorch_lightning.utilities.rank_zero][INFO] - IPU available: False, using: 0 IPUs
+[2023-07-12 06:34:26,766][pytorch_lightning.utilities.rank_zero][INFO] - HPU available: False, using: 0 HPUs
+[2023-07-12 06:34:26,767][dlearn.train][INFO] - Starting training!
+[2023-07-12 06:34:33,969][aim.sdk.reporter][INFO] - creating RunStatusReporter for 292e7af94c5744eaa4ffb69e
+[2023-07-12 06:34:33,971][aim.sdk.reporter][INFO] - starting from: {}
+[2023-07-12 06:34:33,971][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fbe87fe3820>
+[2023-07-12 06:42:42,421][pytorch_lightning.utilities.rank_zero][INFO] - `Trainer.fit` stopped: `max_epochs=25` reached.
+[2023-07-12 06:42:42,806][dlearn.train][INFO] - Starting testing!
+[2023-07-12 06:42:44,494][pytorch_lightning.utilities.rank_zero][INFO] - Restoring states from the checkpoint path at /home/ubuntu/workefs/E3_S8/outputs/train/runs/2023-07-12_06-34-25/best.ckpt
+[2023-07-12 06:42:44,579][pytorch_lightning.utilities.rank_zero][INFO] - Loaded model weights from the checkpoint at /home/ubuntu/workefs/E3_S8/outputs/train/runs/2023-07-12_06-34-25/best.ckpt
+[2023-07-12 06:42:46,925][aim.sdk.reporter][INFO] - creating RunStatusReporter for 292e7af94c5744eaa4ffb69e
+[2023-07-12 06:42:46,928][aim.sdk.reporter][INFO] - starting from: {}
+[2023-07-12 06:42:46,928][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fbe79e32a10>
+[2023-07-12 06:42:47,319][dlearn.train][INFO] - Training Complete
+[2023-07-12 06:42:47,319][dlearn.train][INFO] - Best ckpt path: /home/ubuntu/workefs/E3_S8/outputs/train/runs/2023-07-12_06-34-25/best.ckpt
+[2023-07-12 06:42:47,322][dlearn.train][INFO] - Logging hyperparameters!
+[2023-07-12 06:42:47,449][aim.sdk.reporter][INFO] - creating RunStatusReporter for 292e7af94c5744eaa4ffb69e
+[2023-07-12 06:42:47,452][aim.sdk.reporter][INFO] - starting from: {}
+[2023-07-12 06:42:47,452][aim.sdk.reporter][INFO] - starting writer thread for <aim.sdk.reporter.RunStatusReporter object at 0x7fbe79e45f60>
+[2023-07-12 06:42:47,631][dlearn.utils.utils][INFO] - Output dir: /home/ubuntu/workefs/E3_S8/outputs/train/runs/2023-07-12_06-34-25
+[2023-07-12 06:42:47,632][dlearn.utils.utils][INFO] - Metric name is None! Skipping metric value retrieval...

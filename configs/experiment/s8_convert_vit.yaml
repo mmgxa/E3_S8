@@ -1,0 +1,22 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=cat_dog
+
+defaults:
+  - override /trainer: null
+  - override /logger: null
+  - override /callbacks: null
+  - override /model: vit.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+model:
+  num_classes: 10
+  # drop_p: 0.0
+#   # n_decoder_blocks: 1
+#   # n_embed: 32
+#   # n_heads: 2
+#   # block_size: 8
+
