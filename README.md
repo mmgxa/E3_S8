@@ -41,6 +41,11 @@ This has been packaged into a docker container (inside the `docker` directory)
 ```
 docker build -t emlos8:vit -f Dockerfile-vit .
 ```
+To run the container, use the following command
+
+```
+docker run -it --rm -p 8080:8080 emlos8:vit
+```
 
 ![](./vit.png)
 
@@ -63,6 +68,13 @@ This has been packaged into a docker container (inside the `docker` directory)
 ```
 docker build -t emlos8:gpt -f Dockerfile-gpt .
 ```
+
+To run the container, use the following command
+
+```
+docker run -it --rm -p 8080:8080 emlos8:gpt
+```  
+
 
 **Docker Image Size**  
 ![](./docker.png)
